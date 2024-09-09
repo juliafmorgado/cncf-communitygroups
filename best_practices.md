@@ -1,18 +1,18 @@
 # Best Practices
 
-This page guides running a new Cloud Native Community Group based on the experience of existing ones.
-The diagram shows common steps for a meetup to organize.
-Depending on the size of the meetup additional steps may be required.
+This page provides guidance on running a new Cloud Native Community Group based on the experience of existing ones. 
+The diagram below outlines common steps for organizing a meetup. 
+Depending on the size of your meetup, additional steps may be required.
 
 ```mermaid
 flowchart TB
-    create[0. Create a Cloud Native Community Group] --> start[1. Start planning the event]
+    create[0. Create a Cloud Native Community Group] --> start[1-Start planning the event]
     start -.- speakers[Find speakers] & sponsor[Find a sponsor]
     sponsor -.- location[Event location] & food[Food and drinks]
-    start --> schedule[2. Schedule the event]
-    schedule --> announce[3. Announce the event]
-    announce --> run[4. Run the event]
-    run --> wrapup[5. Post event]
+    start --> schedule[2-Schedule the event]
+    schedule --> announce[3-Announce the event]
+    announce --> run[4-Run the event]
+    run --> wrapup[5-Post event]
     run -.- setup[Setup Location] & welcome[Welcome attendees] & program[Conduct program]
     wrapup --> start
     wrapup -.- retro[Retro] & resources[Share documents and pictures]
@@ -21,7 +21,7 @@ flowchart TB
     class create,start,schedule,announce,run,wrapup mainPath;
 ```
 
-Each of the steps above are now described in more detail.
+Each of the steps above is now described in more detail.
 
 - [0. Getting Started](#0-create-the-cloud-native-community-group)
 - [1. Start planning your event](#1-start-planning-you-event)
@@ -54,56 +54,45 @@ Each of the steps above are now described in more detail.
 
 ## 0. Create the Cloud Native Community Group
 
-CNCF staff is responsible for creating the Cloud Native Community Groups (see the instructions in the [README.md](../README.md) file, but please see the official [Bevy documentation on how to create a chapter](https://help.bevylabs.com/article/454-create-a-chapter).
-It is useful to create a community slack channel `#cloud-native-<city name>` for event coordination ([CNCF Slack](https://app.slack.com/client/T08PSQ7BQ/C015WPLD3F1)).
+CNCF staff is responsible for creating the Cloud Native Community Groups. For detailed instructions, refer to the [README.md](../README.md) file and the official [Bevy documentation on how to create a chapter](https://help.bevylabs.com/article/454-create-a-chapter).
+It is helpful to create a community Slack channel, such as `#cloud-native-<city name>` for event coordination ([CNCF Slack](https://app.slack.com/client/T08PSQ7BQ/C015WPLD3F1)).
 
-The **description** of the group is left to the discretion of the organizers.
+The **description** of the group is at the discretion of the organizers. You may include a brief description of the CNCF and the Cloud Native approach using text from the [Cloud Native Definition](https://github.com/cncf/toc/blob/master/DEFINITION.md).
 
-A brief description of the role of the CNCF and the Cloud Native approach could be added.
+The most important aspect is to maintain an **active group** with frequent events (ideally once a month or at least once every 90 days). Regular online or in-person events are encouraged.
 
-You can use text from the [Cloud Native Definition](https://github.com/cncf/toc/blob/master/DEFINITION.md).
-
-The most important thing is to keep an **active group**, with frequent events (ideally once a month | minimum one every 90 days). We encourage folks to run either online events or regular meetup events.
-
-Sustaining a group yourself can be challenging to manage. Ideally, it would be best if you had a team of passionate and committed co-organizers.
-
-Joining forces helps spread the load and expands the network.
+Managing a group can be challenging. Ideally, you should have a team of passionate and committed co-organizers. Joining forces helps distribute the workload and expand the network.
 
 ## 1. Start planning your event
 
 ### Find Speakers
 
-You should provide a **form** to allow people to submit their talk proposal similar to this:
-https://docs.google.com/forms/d/1V2Y03YMOrIor0M796_WMbYx-fdsn80ngaT-PIum8gUU/edit
+Provide a **form** to allow people to submit their talk proposals. You can use a template similar to this [Speaker Proposal Form](https://docs.google.com/forms/d/1V2Y03YMOrIor0M796_WMbYx-fdsn80ngaT-PIum8gUU/edit).
 
-> **_Note_**: Make a copy! Please do not edit that form.
+> **_Note_**: Make a copy of the form! Please do not edit the template.
 
-Pro Tip: Sessionize has a community license that you can apply for, if you host free community events. [Read more](https://sessionize.com/playbook/community-license)
+Pro Tip: Sessionize offers a community license if you host free community events. [Read more](https://sessionize.com/playbook/community-license)
 
-When possible, take care to review their presentations, and always abide by CNCF's values to remain vendor nuetral.
+Review presentations carefully and always abide by CNCF's values to remain vendor-neutral.
 
-Vendor neutrality in the context of a conference session refers to the principle of maintaining an impartial and unbiased environment during the session, particularly when discussing products, services, or solutions offered by different vendors. The goal is to ensure that the content presented is free from any undue influence, endorsements, or promotional activities related to specific vendors.
+> **Vendor neutrality** in the context of a conference session refers to the principle of maintaining an impartial and unbiased environment during the session, particularly when discussing products, services, or solutions offered by different vendors. The goal is to ensure that the content presented is free from any undue influence, endorsements, or promotional activities related to specific vendors. By adhering to the concept of vendor neutrality it fosters an environment where knowledge sharing and learning take precedence over commercial interests, benefiting both attendees and the broader industry.
 
-By adhering to the concept of vendor neutrality it fosters an environment where knowledge sharing and learning take precedence over commercial interests, benefiting both attendees and the broader industry.
-
-Attend **conferences** (e.g, DockerCon, CloudNativeCon, etc.) where you can find speakers and meet many people who use or are involved in the CNCF projects that may be interested in joining your group.
+Attend **conferences** (e.g, DockerCon, CloudNativeCon, etc.) to find potential speakers and network with individuals involved in CNCF projects who may be interested in joining your group.
 
 ### Sponsorships
 
-You should contact local technology companies. Many of them are interested in hosting such kind of events.
+Contact local technology companies as many are interested in sponsoring events. 
+Aim for a central location to make it more accessible to attendees. 
+If on a budget, consider cold dishes and provide vegan and vegetarian options.
 
-It is better to find a place in a central location. Downtown would be ideal because it's easier to access for most of the attendees.
-
-If you are on a budget to order food, it is usually best to opt for cold dishes. It is highly recommended to offer vegan and vegetarian options.
-
-What to offer the sponsors in return
+What to offer the sponsors in return:
 * Thank your sponsors by highlighting them in the "Sponsor" tab within your Bevy event settings. You can do this by uploading their logo and adding a link that takes people to their website.
-* Offer your sponsor to set up a small table in our just outside the room, so people can engage in conversation.
-* Offer your sponsor no more than 15 minutes of talking time on the stage. But be sure they are NOT the main content.
+* Allow them to set up a small table at or near the event location for engagement with the audience.
+* Provide up to 15 minutes of stage time for sponsor presentations, but ensure they are NOT the main content.
 
 ## 2. Schedule a new event
 
-Then the essential information is about the agenda. Each talk description should contain:
+Set up a detailed agenda for the event. Each talk description should include:
 
 ```
 - A short bio of the speaker
@@ -111,52 +100,52 @@ Then the essential information is about the agenda. Each talk description should
 - A paragraph describing the content of the presentation/demo
 ```
 
-If you're planning a hands-on demo, you should ensure that the WiFi can handle the number of attendees.
+If you're planning a hands-on demo, ensure that the WiFi can handle the number of attendees.
 
-Furthermore, you should check you're not limited by some quotas (Cloud provider).
+Also, check for any quotas or limitations imposed by your cloud provider.
 
-The choice of date and time matters. Most meetups choose Tuesdays, Wednesdays, or Thursdays after work. But use your discretion, since every culture varies.
+The choice of date and time matters. Most meetups are held on Tuesdays, Wednesdays, or Thursdays after work, but adjust based on local culture.
 
 ### Booking
 
 If the room capacity limits you, you should do an **overbooking**.
 
-Most of the time, there are 30% of people who RSVP, but never come. Recently KCDs (1 to 2 day summit-like events have a 92% show rate).
+Most of the time, 30% of people who RSVP never show up. Recent KCDs (1 to 2 day summit-like events) have shown a 92% show rate.
 
-You should think about sending a **reminder** message to the meetup group to ask the people to free their place if they can't come.
+Send a **reminder** message to the meetup group to encourage those who cannot attend to free up their spot.
 
 ## 3. Announce the event
 
-The following steps can be useful to attract more folks for your upcoming event
+The following steps can be useful to attract more attendees to your event:
 
-- Reach out to meetups in the area taking place to share your event (don't forget to return the favor)
-- Post on social media channels and notify the CNCF to bump your message. This can be done in the Slack workspace via the #socialmedia channel. Tag Katie Meinder and she will amplify from the CNCF main accounts, provided your post is vendor-nuetral.
+- Reach out to meetups in your area asking them to share your event (don't forget to return the favor)
+- Post on social media channels and notify the CNCF to bump your message. This can be done in the Slack workspace via the #socialmedia channel. Tag Katie Meinder and she will amplify from the CNCF main accounts, provided your post is vendor-neutral.
 - Place your event in newsletters and podcasts
-- Write a CNCF blog post that is about 800 words. Submit for review at pr@cncf.io.
+- Write an 800-word CNCF blog post and submit it for review at pr@cncf.io.
 
 
 ## 4. Run the event
 
-There are a few tips you should look out for running the event
+Here are a few tips you should look out for when running the event:
 
 ### Preparation
-- **Guide attendees to the event location**: make sure the path from the street to the event location is labeled and clear
-- **Prepare the speaker room**: make sure you do a technical check, prepare chairs and all the equipment you might use
-- **Guide attendees at the venue**: label the way to restrooms, the elevator, terrace and only other places that are visited during the event. If the location has “restricted” areas, label those too.
-- **Food**: prepare a place to put the food (if you order for 100 people, this takes a lot of space), label ingredients for allergies and personal preference (vegan, halal food, …)
+- **Guide attendees to the event location**: Ensure clear signage from the street to the event venue.
+- **Prepare the speaker room**: Conduct a technical check and arrange chairs and equipment.
+- **Guide attendees at the venue**:  Label pathways to restrooms, elevators, and other relevant areas. Clearly mark restricted areas.
+- **Food**: Set up a designated area for food and label ingredients for allergens and dietary preferences (e.g., vegan, kosher, halal...).
 
 ### Event Introduction
 
-As an introduction to the event, there are common recommendations you should talk about or make clear to everyone beforehand.
+When introducing the event, here are common recommendations you should cover:
 
-- **CNCF Code of Conduct**: As CNCF Community Event, you oblige by the [code of conduct](https://www.cncf.io/conduct/). You can summarize it to be "excellent to each other"
-- **Taking picture's disclaimer**: Make attendees aware that the organizer team takes pictures, with some selective ones getting shared publicly
-- **Thank the sponsor(s)**
-- **Welcome feedback**: share information where to reach the organizers to ask questions and share feedback about the event.
+- **CNCF Code of Conduct**: As a CNCF Community Event, you adhere to the [code of conduct](https://www.cncf.io/conduct/) which you can summarize to be "excellent to each other".
+- **Photography disclaimer**: Inform attendees that photos will be taken and some may be shared publicly.
+- **Thank sponsor(s)**
+- **Welcome feedback**: Provide contact information for attendees to ask questions and share feedback.
 
 ### Hosting the event
 
-Some learnings facilitating the event:
+Some learnings when facilitating the event:
 
 - **Hosting**: It is useful to select one of the organizers as host to give the event introduction, introduce speakers and in general provide guidance to the audience during the event.
 - **Speaker times**: It often happens that a talk takes a little longer than anticipated or the audience is asking many questions. In smaller meetups you can be flexible about it, in bigger events you should interrupt and stick to the schedule.
